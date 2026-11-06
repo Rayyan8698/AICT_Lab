@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>KIET-Karachui Institue Of Economics & Technology</title></head>
+<style type=text/css>
+	html { scroll-behavior: smooth; }
+	body{margin :0}
+	.head{text-align:center;
+	color:white;
+	padding: 15px 0;
+	background-color:Navy;}
+	.head h1{font-size:50px;}
+	.head p{color:yellow;
+	font-size:30px;}
+	.menu {background-color: gold;
+	position: sticky;
+	top: 0;
+	text-align: center;}
+	.menu a {display: inline-block;
+	font-size: 20px;
+	padding: 12px 20px;
+	color: navy;
+	text-decoration: none;
+	font-weight: bold;}
+	.menu a:hover {background-color: navy;
+	color: white;}
+	body { background-color: #f4f6fb; margin: 0; font-family: Arial, sans-serif; }
+	.home {width: 900px;
+	margin: 30px auto;
+	padding: 28px;
+	background-color: #12305a;
+	color: white;
+	text-align: center;
+	border-left: 6px solid #e0a526;
+	border-radius: 10px;}
+	.home h2 {font-family: Georgia, serif;
+	border-bottom: 2px solid white;
+	padding-bottom: 10px;}
+	.home img {width: 670px;
+	height: 295px;
+	object-fit: contain;
+	background-color: white;
+	border: 4px solid #e0a526;
+	border-radius: 8px;
+	margin: 15px 0;}
+	.home button {background-color: #e0a526;
+	color: #12305a;
+	border: none;
+	padding: 12px 28px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 30px;
+	cursor: pointer;}
+	.about {width: 900px;
+	margin: 30px auto;
+	padding: 28px;
+	background-color: white;
+	border-left: 6px solid #e0a526;
+	border-radius: 10px;
+	overflow: hidden;}
+	.about h2 {font-family: Georgia, serif;
+	color: #12305a;
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #f4f6fb;}
+	.about img {float: right;
+	width: 300px;
+	margin: 0 0 10px 25px;
+	border: 3px solid #12305a;
+	border-radius: 8px;
+	padding: 4px;}
+	.about p {color: #26303d;
+	line-height: 1.7;}
+	.departments {width: 900px;
+	margin: 30px auto;
+	padding: 28px;
+	background-color: white;
+	border-left: 6px solid #e0a526;
+	border-radius: 10px;}
+	.departments h2 {
+	font-family: Georgia, serif;
+	color: #12305a;
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #f4f6fb;}
+	.departments ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;}
+	.departments li {background-color: #f4f6fb;
+	color: #26303d;
+	padding: 14px 20px;
+	margin-bottom: 10px;
+	border: 1px solid #dde3ee;
+	border-left: 6px solid #12305a;
+	border-radius: 8px;}
+	.departments li:hover {background-color: #12305a;
+	color: white;}
+	.programs {
+	width: 900px;
+	margin: 30px auto;
+	padding: 28px;
+	background-color: white;
+	border-left: 6px solid #e0a526;
+	border-radius: 10px;}
+	.programs h2 {font-family: Georgia, serif;
+	color: #12305a;
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #f4f6fb;}
+	.programs table {width: 100%;
+	border-collapse: collapse;}
+	.programs th, .programs td {padding: 14px;
+	text-align: left;
+	border: 1px solid #d5dbe8;}
+	.programs th {background-color: #12305a;
+	color: white;}
+	.programs tr:nth-child(even){background-color: #f4f6fb;}
+	.programs tr:hover td {background-color: #fff3d1;}
+	.admission {width: 900px;
+	margin: 30px auto;
+	padding: 28px;
+	background-color: white;
+	border-left: 6px solid #e0a526;
+	border-radius: 10px;}
+	.admission h2 {font-family: Georgia, serif;
+	color: #12305a;
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #f4f6fb;}
+	.admission form { max-width: 560px; }
+	.admission label {display: block;
+	font-weight: bold;
+	margin: 14px 0 4px;}
+	.admission input[type=text],
+	.admission input[type=email],
+	.admission input[type=tel],
+	.admission select {width: 100%;
+	padding: 10px 12px;
+	border: 1.5px solid #b9c3d6;
+	border-radius: 6px;
+	font-size: 16px;}
+	.admission fieldset {border: 1.5px solid #b9c3d6;
+	border-radius: 6px;
+	margin-top: 14px;}
+	.admission fieldset label {display: inline-block;
+	font-weight: normal;
+	margin: 6px 16px 6px 0;}
+	.admission button {background-color: #12305a;
+	color: white;
+	border: none;
+	padding: 12px 28px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 30px;
+	margin-top: 18px;
+	cursor: pointer;}
+	.admission button:hover { background-color: #e0a526; color: #12305a; }
+	#formMsg { color: #1a7a3c; font-weight: bold;}
+	.contact{
+	width: 900px;
+	margin: 30px auto;
+	padding: 28px;
+	background-color: white;
+	border-left: 6px solid #e0a526;
+	border-radius: 10px;}
+	.contact h2{
+	font-family: Georgia, serif;
+	color: #12305a;
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #f4f6fb;}
+	footer{background-color: #12305a;
+	color: white;
+	text-align: center;
+	padding: 22px 16px;
+	border-top: 5px solid #e0a526;}
+	footer a{color: #e0a526;
+	text-decoration: none;
+	margin: 0 8px;}
+	footer a:hover{ text-decoration: underline; }
+</style>
+</head>
+<body>
+<header class ="head"><h1>KIET</h1></style>
+<p><i><u>Karachi Institute Of Economics & Technology</u></i></p>
+</header>
+<div class="menu">
+<b><a href="#home">Home</a></b>
+<b><a href="#about">About</a></b>
+<b><a href="#departments">Department</a></b>
+<b><a href="#programs">Program</a></b>
+<b><a href="#admission">Admission</a></b>
+<b><a href="#contact">Contact</a></b>
+</div>
+<section class="home" id="home">
+<h2>Welcome to KIET</h2>
+<p>Shaping future leaders through quality education, research and community service.</p>
+<img src="KIET2.png" alt="KIET campus"><br>
+<button onclick="showWelcome()">Click for a Welcome Message</button>
+<p id="welcomeMsg"></p>
+</section>
+<section class="about" id="about">
+<h2>About Us</h2>
+<img src="KIET.png" alt="KIET campus">
+<p>The Karachi Institute of Economics and Technology (KIET) is a higher-education institution in Karachi, offering programs in technology, engineering, business and the sciences, supported by modern laboratories, libraries and campus facilities.</p>
+<p>Our mission is to provide accessible, high-quality education that develops critical thinking, professional skills and ethical leadership.</p>
+</section>
+<section class="departments" id="departments">
+<h2>Our Departments</h2>
+<ol>
+<li>Department of Computer Science</li>
+<li>Department of Business Administration</li>
+<li>Department of Electrical Engineering</li>
+<li>Department of Mathematics</li>
+<li>Department of English Literature</li>
+<li>Department of Physics</li>
+</ol>
+</section>
+<section class="programs" id="programs">
+<h2>Academic Programs</h2>
+<table>
+<tr><th>Program</th><th>Degree Title</th><th>Duration</th></tr>
+<tr><td>Computer Science</td><td>BS (Computer Science)</td><td>4 Years</td></tr>
+<tr><td>Business Administration</td><td>BBA</td><td>4 Years</td></tr>
+<tr><td>Electrical Engineering</td><td>BE (Electrical)</td><td>4 Years</td></tr>
+<tr><td>Software Engineering</td><td>MS (Software Engineering)</td><td>2 Years</td></tr>
+<tr><td>Mathematics</td><td>BS (Mathematics)</td><td>4 Years</td></tr>
+</table>
+</section>
+<section class="admission" id="admission">
+<h2>Admission Inquiry</h2>
+<form id="inquiryForm" onsubmit="return submitForm(event)">
+<label for="name">Full Name</label>
+<input type="text" id="name" required>
+<label for="email">Email</label>
+<input type="email" id="email" required>
+<label for="phone">Contact Number</label>
+<input type="tel" id="phone" required>
+<fieldset>
+<legend>Gender</legend>
+<label><input type="radio" name="gender" value="Male" required> Male</label>
+<label><input type="radio" name="gender" value="Female"> Female</label>
+<label><input type="radio" name="gender" value="Other"> Other</label>
+</fieldset>
+<label for="program">Program Selection</label>
+<select id="program" required>
+<option value="">-- Select a program --</option>
+<option>BS (Computer Science)</option>
+<option>BBA</option>
+<option>BE (Electrical)</option>
+<option>MS (Software Engineering)</option>
+<option>BS (Mathematics)</option>
+</select>
+<button type="submit">Submit Inquiry</button>
+<p id="formMsg"></p>
+</form>
+</section>
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p><strong>Address:</strong> North Nazimabad Campus F-103 & 103/1,Block-F,North Nazimabad Allama Rasheed Turbani Road.
+<p><strong>Phone:</strong> (92-21)36628381,36679314 
+</section>
+<footer>
+<p>&copy; 2026 Karachi Institute of Economics and Technology (KIET)</p>
+<p><a href="#home">home</a>
+<a href="#programs">Programs</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a></p>
+</footer>
+<script>
+function showWelcome() {
+document.getElementById("welcomeMsg").textContent =
+"Welcome to KIET - Karachi Institute of Economics and Technology!";
+}
+var slides = document.querySelectorAll(".slide");
+var i = 0;
+setInterval(function () {
+slides[i].classList.remove("active");
+i = (i + 1) % slides.length;
+slides[i].classList.add("active");
+}, 3000);
+function submitForm(e) {e.preventDefault();
+var name = document.getElementById("name").value;
+var program = document.getElementById("program").value;
+document.getElementById("formMsg").textContent =
+"Thank you, " + name + "! Your inquiry for " + program + " has been received.";
+document.getElementById("inquiryForm").reset();
+return false;}
+</script>
+</body>
+</html>
